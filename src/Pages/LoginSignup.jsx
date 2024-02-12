@@ -18,7 +18,7 @@ const LoginSignup =() => {
         console.log("Logged",formData);
         console.log("Signed Up",formData);
         let responseData;
-        await fetch('https://shopper-4atx.onrender.com/login',{
+        await fetch('https://shopper-api.onrender.com/login',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
@@ -40,7 +40,7 @@ const LoginSignup =() => {
     const signup = async() =>{
         console.log("Signed Up",formData);
         let responseData;
-        await fetch('https://shopper-4atx.onrender.com/signup',{
+        await fetch('https://shopper-api.onrender.com/signup',{
             method:'POST',
             headers:{
                 Accept:'application/form-data',
