@@ -7,7 +7,7 @@ const Popular =() => {
     const [popularProducts , setPopularProducts] = useState([]);
 
     useEffect(()=>{
-        fetch('https://shopper-4atx.onrender.com/popularinwomen')
+        fetch('https://shopper-api.onrender.com/popularinwomen')
         .then((response)=>response.json())
         .then((data=>setPopularProducts(data)))
     },[])
